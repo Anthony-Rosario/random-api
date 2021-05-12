@@ -20,13 +20,13 @@ const CharacterList = ({ characters }) => {
 CharacterList.propTypes = {
   characters: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.id.isRequired,
-      name: PropTypes.name.isRequired,
-      species: PropTypes.species.isRequired,
-      image: PropTypes.image.isRequired,
-      status: PropTypes.status.isRequired,
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      species: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      status: PropTypes.string.isRequired,
     })
-  )
-}
+  ).isRequired,
+};
 
 export default CharacterList;

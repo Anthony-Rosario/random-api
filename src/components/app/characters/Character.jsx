@@ -12,10 +12,10 @@ const Character = ({ name, species, image, status }) => {
 } 
 
 Character.propTypes = {
-  name: PropTypes.name.isRequired,
-  species: PropTypes.species.isRequired,
-  image: PropTypes.image.isRequired,
-  status: PropTypes.status.isRequired,
+  name: PropTypes.string.isRequired,
+  species: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  status: PropTypes.string.isRequired,
 }
 
 export default Character;
