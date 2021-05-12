@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 import Character from './Character'
 
 const CharacterList = ({ characters }) => {
-  <ul>
+  return(
+  <ul aria-label='characters'>
     {characters.map((character) => (
-      <li>
+      <li key={character.id[0]}>
         <Character 
           name={character.name}
           species={character.species}
@@ -15,6 +16,7 @@ const CharacterList = ({ characters }) => {
       </li>
     ))}
   </ul>
+  )
 }
 
 CharacterList.propTypes = {
