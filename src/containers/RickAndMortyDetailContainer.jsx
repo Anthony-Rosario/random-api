@@ -4,7 +4,7 @@ import { findCharacterById } from '../services/rickandmortyApi'
 
 export default class RickAndMortyDetailContainer extends Component {
   state = {
-    character: {},
+    character: { },
   }
 
   async componentDidMount() {
@@ -12,12 +12,12 @@ export default class RickAndMortyDetailContainer extends Component {
     const character = await findCharacterById(id);
 
     this.setState({
-      character,
+      character
     });
   }
 
   render() {
     const { character } = this.state;
-    return <CharacterDetail { ...character } />;
+    return <CharacterDetail character={character} />;
   }
 }

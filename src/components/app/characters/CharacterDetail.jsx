@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
-const CharacterDetail = ({ name, species, image, status }) => {
+function CharacterDetail({ character: { name, species, image, status }, }) {
   return (
     <>
-    <Link to={'/'} />
       <div>
+        <Link to={'/'}>Back to the list</Link>
         <img src={image} alt={name} />
         <p>{name}</p>
         <p>{species}</p>
@@ -17,7 +17,7 @@ const CharacterDetail = ({ name, species, image, status }) => {
 }
 
 CharacterDetail.propTypes = {
-  character: PropTypes.object.isRequired,
+  character: PropTypes.object.isRequired
 }
 
 export default CharacterDetail;
