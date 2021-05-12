@@ -9,7 +9,7 @@ export default class RickAndMortyDetailContainer extends Component {
 
   async componentDidMount() {
     const { id } = this.props.match.params;
-    const character = await findCharacterById();
+    const character = await findCharacterById(id);
 
     this.setState({
       character,

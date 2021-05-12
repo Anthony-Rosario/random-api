@@ -10,14 +10,13 @@ const Character = ({ id, name, species, image, status }) => {
       <p>{name}</p>
       <p>{species}</p>
       <p>{status}</p>
-      <p>{id}</p>
     </Link>
   </>
   )
 } 
 
 Character.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.number,
   name: PropTypes.string.isRequired,
   species: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
