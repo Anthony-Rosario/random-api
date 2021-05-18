@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RickAndMortyDetailContainer should link to a page with a single character and its relational data 1`] = `
+<li
+  aria-label="character detail"
+>
+  <a
+    href="/"
+  >
+    Back to the list
+  </a>
+  <img />
+  <p />
+  <p />
+  <p />
+</li>
+`;
