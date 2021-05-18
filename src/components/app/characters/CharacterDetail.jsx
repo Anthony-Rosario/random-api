@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom'
 
 function CharacterDetail({ character: { name, species, image, status }, }) {
   return (
-    <>
-      <div>
+    <ul>
+      <li aria-label='character detail'>
         <Link to={'/'}>Back to the list</Link>
         <img src={image} alt={name} />
         <p>{name}</p>
         <p>{species}</p>
         <p>{status}</p>
-      </div>
-    </> 
+      </li>
+    </ul> 
   )
 }
 

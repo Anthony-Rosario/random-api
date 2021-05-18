@@ -4,7 +4,7 @@ import Character from './Character'
 
 function CharacterList({ characters }) {
   return(
-  <ul aria-label='characters'>
+  <ul aria-label='character list'>
     {characters.map((character) => (
       <li key={character.name}>
         <Character

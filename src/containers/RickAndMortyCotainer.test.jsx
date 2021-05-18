@@ -7,7 +7,7 @@ describe('RickAndMortyContainer', () => {
   it('should render a list of characters', async() => {
     render(<MemoryRouter><RickAndMortyContainer /></MemoryRouter>);
     screen.getByText('Loading...');
-    const ul = await screen.findByRole('list', { name: 'characters' });
+    const ul = await screen.findByRole('list', { name: 'character list' });
     expect(ul).toMatchSnapshot();
   });
 });

@@ -10,7 +10,7 @@ describe('RickAndMortyDetailContainer', () => {
         id: 1
       }
     }}/></MemoryRouter>);
-    const li = await screen.findByRole('list', { name: 'character' });
+    const li = await screen.findByRole('listitem', { name: 'character detail' });
 
     expect(li).toMatchSnapshot();
   })
